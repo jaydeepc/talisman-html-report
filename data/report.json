@@ -1,0 +1,506 @@
+{
+  "summary": {
+    "types": {
+      "filecontent": 0,
+      "filesize": 0,
+      "filename": 0
+    }
+  },
+  "results": [{
+    "filename": "detector/detection_results_test.go",
+    "failure_list": [{
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: 87139cc4d975333b25b6275f97680604add51b84eb8f4a3b9dcbbc652e6f27ac\",",
+      "commits": ["1234543asdadsad", "9876567jshgfghjsad7656"]
+    }],
+    "warning_list": null
+  }, {
+    "filename": "detector/checksum_calculator_test.go",
+    "failure_list": [{
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: '25bd31a28bf9d4e06327f1c4a5cab2260574ae508803f66adcc393350e994866'",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: '87139cc4d975333b25b6275f97680604add51b84eb8f4a3b9dcbbc652e6f27ac'",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: \"87139cc4d975333b25b6275f97680604add51b84eb8f4a3b9dcbbc652e6f27ac\",",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: \"25bd31a28bf9d4e06327f1c4a5cab2260574ae508803f66adcc393350e994866\",",
+      "commits": []
+    }],
+    "warning_list": null
+  }, {
+    "filename": ".travis.yml",
+    "failure_list": [{
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: tf9N5ekIuYAEnoQAKMnhjOQ6KHTwDIk/WK8kNDS+Ol2g80/2MPPLTWQBZs/g+KPqL63vbkqgZ4kDti3i5GRARN7ypQ+IqbtYVEfB9L6sNlfkz+fmJFaWjTqSiBDN4lC6zixRmQjlD4h3axIi7TxfeVGR3yct/bbwAQf/8yy6fH16EHk1LRO/Lx1crBIYc9bPu86Qt0BMqomaeUjxrQKq/1+MC2JkLzv29Ixk0Nlgab0HwcLlayFCOgI96r98RFXdkCmMrLgLNhHtfY8VtCkV5HqXdygZUSCwSPL/v/ZxPfBqYHAeoHmr83oV5l7xxhKldIp792bYWNtkE7qlSTj3CRvanYXGZiuG8hzvL+XYt2vnLNJuMfYPW3SkcSBCLOjSzOHPan9I6LBWLjwNUEOmbOALAuUD0DE0zYgZfmNv6/q8e3Z02+sp5hYPoSlu8aHL/vxd5GsuDV0ChP+C/mWjOm5Hlq2r+LGRuJ3oq31lQoENKqychEVw5m0HS5PQvWwf4NDjzgNMTFxCUwfQ+NikXDPo6LCcL4eRcyhuqnhmjnNbiaKSuyrYhzrCC64Agf7seSCaW/+ASDryac8M28P5g0TYZxIfy4Pmcqoj7kHj9uAb6dNGGTcgsZKcUY2Vqo30tQ6mh800YhXgYe/aF7lmBN1YcxgQbSRpqxvtw9iQgvw=",
+      "commits": []
+    }],
+    "warning_list": null
+  }, {
+    "filename": "detector/shannon_entropy_test.go",
+    "failure_list": [{
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: entropy.GetEntropyCandidatesWithinWord(\"wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY\",",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: entropy.GetShannonEntropy(\"wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY\",",
+      "commits": []
+    }],
+    "warning_list": null
+  }, {
+    "filename": "Godeps/Godeps.json",
+    "failure_list": [{
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: \"e3a8ff8ce36581f87a15341206f205b1da467059\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: \"446d1c146faa8ed3f4218f056fcd165f6bcfda81\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: \"5215b55f46b2b919f50a1df0eaa5886afe4e3b3d\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: \"6e38d8d5e45580c1715d4dc7e4808be379788a2e\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: \"e8554b8641db39598be7f6342874b958f12ae1d4\"",
+      "commits": []
+    }],
+    "warning_list": null
+  }, {
+    "filename": "detector/base64_aggressive_detector_test.go",
+    "failure_list": [{
+      "type": "",
+      "message": "Potential secret pattern : awsAccessKeyIDExample string =",
+      "commits": ["ecc20dd81a74db28e8ca78dc57b7acb0cb8360f8", "69f5401f475100e3ea9ffd742800123e562900a3", "9dc1d2312605ed5e00e5e77d7d9d3d518df701f3", "3f065a82e6a0da880d4d513a79ee684afd08aaf7", "0e35b873d678b3537e31855e5c38ac6171570cdb", "0f8f19d1e46d0cdeb74951efb8e2ebaaa5cc4f57", "e68be1ec71cc666c5d544c9abf1cb613fe68ba39", "8bb5717eea67578be8c4bf8d789e6b991dad06a7", "6ff6a51dbc53f67e7a111efa8e35c4f7586e468a", "c95d1b7055e0778ba43e2e6377f6d6c2e46a688e", "a230499d74e044fa158aae1bd31d7c9c4c524f0d", "13f53f498c5cc90a5f32fb2da67d82913c668423", "ca82c92f1dd81adc502135603d1170b1a319213b", "a0f6eb7031edf75c262d1d30f5bd16af84e6619a", "db80f170fe4c085760db2a0aeabc683eba22f4b2", "c12f0717773233f13251c1421f5fb0b1ce0cebd1", "2e4510a47dfcdbca1482bf719750bd1de46bb476", "f9efbaf6d8d32b3403ea969406ca4c25ef83acc4", "52ff6c9fc205b6cbcd45569ae76483d916a78182", "97e4587adbeec2902fa84e1a65ff61c18d7ca342", "def0dc1e4a04aaae364e9779838a32716ca2de4e", "3f6cfd96843cb91f7e4c88657688915e60dd9320", "4aad7a8200e806998e366f3a0f5af94150af3b24", "366243c3c73dbeb536b3fb05f916eafbaeea15bd", "270df857bfac857728f9a8fa1f80a8dd11c4b46c", "f9f384d6e645b82e8efa04cf12b7a7a573d9158e", "194d2d008eb1c8cf618d780bea0eef5eaad45fcf", "6ec00c27cbbc0bf5c386ad3b142031e191725948", "e4f3b3ca385fa296e8a47324776487aad5a26ad3", "c72d5c4a2795289d033e5e988f878e4586daafed", "3fc44001ea572fffa8750106885da22e8ec84009", "5e27ba9f609cc4ec365369b500341c2ba29b4ec5", "70b67f3129140611ea81e5301134be1e015c7a6f", "99363815a28e012457360a220dd315b0d934e35a", "291b040e677dc6b279a80e213079864d8efa76b1", "b88752c45848055f7a21e01b85b858088a92ab0e", "417adb453332ed957c0f5ac36320324d365c8330", "cab7d98d903c72d37ebeab278a75471e7a626a39", "1bb374f8a47647e6e51336f768df1975b2fd5b9b", "e9134ad3e5e2000d979dc952f930fc82e5851c8e", "e66ffb352acbae66975604d82b90cf457362cdd5", "c0861abf8a3a16af274c2516ca0eb977364ed72a", "af07fc983236d46ef51067a1b9da46e5fdc5992f", "db7e5febcbbaa8f80c8ada4a739e5156b7893c5e", "e31df60323c1c5aeefe7019301d0f8f1f75e0477", "044fd6509996ca538563689680e64460c5f552b8", "9ecae9cf72201b952820d469902efc0462496c18", "8bc4337f4d72e6d0107b8060daeaa7e77502f7be", "a37b8197fcd13ad86c982d91ea401534d07d5754", "4b10137023ea83c1c3c267817964c7168a791106", "511e5b2652ad1653707528bd7dd5f6e8242b4eba", "9f36cbd1c0ef27061bfea949de732274fe4ec282", "6c71cd338e9c34822b4ffbc7c273c30829aaef64", "d8d64011c513a85397efe3866a95793e577b51d8", "9997a21073fdfff0cd935dbc87726564f6eb1b4b", "869f503f461b17f349ead22cac800b80ea9a28ce", "8213369308d60e15218d810a47c00ae53cb7dfdf", "7ebc4b20b529ff020c5c8949c64aaf8b8299bc07", "71930b1e953f3d282695d5fbc7fcff75c680f903", "05cfe0d70b6b601a3d6ae4daf891610fde78916d", "18d1a929a4cf5c053166a0264921006b5a3050d3", "2e2b77454d5de6679e0bd7327da9890ae14a3166", "239570af38226cb7ea9f0bd9f472c306a5dd0197", "cb8b768e8543b45cbf8da9ce706febc92913426b", "28cc0e669e1e3da1113e854fe3bfc57cbfe70dca", "cabf77aef268fb4767ae4598e3221ff56aee225d", "ae51a5e5f3d9e5625a0e1dcee7d99d30aa51faad", "d767ce6863b7831ee1f197c4a232490c5d2d0530", "cefaf0cafc6b02fcf220438cc4bd42713bcbdc35", "684bfd3cc7fb0bd7eaa4a8cdd3a5cc3691db4e08", "57bb9fbf27392a2aefd8cbdb5b838fa26be57814", "96c6739f6517b51ab2b53261ed2f19c731565e97", "eed81ed6dea2104642662643845da7f133b74d3d", "c6b43a20517e9ab47d1f4323adb3d07ad3830f9a", "a9b559caa663a7cb6f217bd13af314858e50c2b7", "db3a4159a169a2457371f755cb45f715940224c4", "936b6917bc8dfbf520b61fef97ebe29831ca5038", "6d5bc052effc8d8a1fcd6a19dd673f50faff13e2", "a3c7d50227dc4613c0e37d32f4d4d3b386dcb1b5", "983c1242346b0289300a6de0e8f7746df5bd9435"]
+    }],
+    "warning_list": null
+  }, {
+    "filename": "detector/pattern_detector.go",
+    "failure_list": [{
+      "type": "",
+      "message": "Potential secret pattern : BEGIN RSA PRIVATE KEY.*END RSA PRIVATE KEY",
+      "commits": ["3f6cfd96843cb91f7e4c88657688915e60dd9320", "5e27ba9f609cc4ec365369b500341c2ba29b4ec5", "99363815a28e012457360a220dd315b0d934e35a", "417adb453332ed957c0f5ac36320324d365c8330", "a230499d74e044fa158aae1bd31d7c9c4c524f0d", "1bb374f8a47647e6e51336f768df1975b2fd5b9b", "c0861abf8a3a16af274c2516ca0eb977364ed72a", "af07fc983236d46ef51067a1b9da46e5fdc5992f", "db7e5febcbbaa8f80c8ada4a739e5156b7893c5e", "e31df60323c1c5aeefe7019301d0f8f1f75e0477", "a37b8197fcd13ad86c982d91ea401534d07d5754", "db80f170fe4c085760db2a0aeabc683eba22f4b2", "511e5b2652ad1653707528bd7dd5f6e8242b4eba", "9f36cbd1c0ef27061bfea949de732274fe4ec282", "6c71cd338e9c34822b4ffbc7c273c30829aaef64", "d8d64011c513a85397efe3866a95793e577b51d8", "8213369308d60e15218d810a47c00ae53cb7dfdf", "7ebc4b20b529ff020c5c8949c64aaf8b8299bc07", "18d1a929a4cf5c053166a0264921006b5a3050d3", "239570af38226cb7ea9f0bd9f472c306a5dd0197", "cb8b768e8543b45cbf8da9ce706febc92913426b", "cabf77aef268fb4767ae4598e3221ff56aee225d", "ecc20dd81a74db28e8ca78dc57b7acb0cb8360f8", "69f5401f475100e3ea9ffd742800123e562900a3", "9dc1d2312605ed5e00e5e77d7d9d3d518df701f3", "3f065a82e6a0da880d4d513a79ee684afd08aaf7", "e68be1ec71cc666c5d544c9abf1cb613fe68ba39", "8bb5717eea67578be8c4bf8d789e6b991dad06a7", "c12f0717773233f13251c1421f5fb0b1ce0cebd1", "def0dc1e4a04aaae364e9779838a32716ca2de4e", "366243c3c73dbeb536b3fb05f916eafbaeea15bd", "270df857bfac857728f9a8fa1f80a8dd11c4b46c", "f9f384d6e645b82e8efa04cf12b7a7a573d9158e", "c72d5c4a2795289d033e5e988f878e4586daafed", "0e35b873d678b3537e31855e5c38ac6171570cdb", "0f8f19d1e46d0cdeb74951efb8e2ebaaa5cc4f57", "6ff6a51dbc53f67e7a111efa8e35c4f7586e468a", "c95d1b7055e0778ba43e2e6377f6d6c2e46a688e", "13f53f498c5cc90a5f32fb2da67d82913c668423", "a0f6eb7031edf75c262d1d30f5bd16af84e6619a", "f9efbaf6d8d32b3403ea969406ca4c25ef83acc4", "52ff6c9fc205b6cbcd45569ae76483d916a78182", "97e4587adbeec2902fa84e1a65ff61c18d7ca342", "4aad7a8200e806998e366f3a0f5af94150af3b24", "6ec00c27cbbc0bf5c386ad3b142031e191725948", "3fc44001ea572fffa8750106885da22e8ec84009"]
+    }],
+    "warning_list": null
+  }, {
+    "filename": "detector/filecontent_detector_test.go",
+    "failure_list": [{
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: \"wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzY290Y2guaW8iLCJleHAiOjEzMDA4MTkzODAsIm5hbWUiOiJDaHJpcyBTZXZpbGxlamEiLCJhZG1pbiI6dHJ1ZX0.03f329983b86f7d9a9f5fef85305880101d5e302afafa20154d094b229f757\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: accessKey=\\\"wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY\\\";\\r\\n",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzY290Y2guaW8iLCJleHAiOjEzMDA4MTkzODAsIm5hbWUiOiJDaHJpcyBTZXZpbGxlamEiLCJhZG1pbiI6dHJ1ZX0.03f329983b86f7d9a9f5fef85305880101d5e302afafa20154d094b229f757\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: \"68656C6C6F20776F726C6421\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Potential secret pattern : awsSecretAccessKey string =",
+      "commits": ["a230499d74e044fa158aae1bd31d7c9c4c524f0d", "936b6917bc8dfbf520b61fef97ebe29831ca5038", "99363815a28e012457360a220dd315b0d934e35a", "417adb453332ed957c0f5ac36320324d365c8330", "1bb374f8a47647e6e51336f768df1975b2fd5b9b", "c0861abf8a3a16af274c2516ca0eb977364ed72a", "af07fc983236d46ef51067a1b9da46e5fdc5992f", "db7e5febcbbaa8f80c8ada4a739e5156b7893c5e", "e31df60323c1c5aeefe7019301d0f8f1f75e0477", "a37b8197fcd13ad86c982d91ea401534d07d5754", "511e5b2652ad1653707528bd7dd5f6e8242b4eba", "9f36cbd1c0ef27061bfea949de732274fe4ec282", "6c71cd338e9c34822b4ffbc7c273c30829aaef64", "d8d64011c513a85397efe3866a95793e577b51d8", "8213369308d60e15218d810a47c00ae53cb7dfdf", "7ebc4b20b529ff020c5c8949c64aaf8b8299bc07", "18d1a929a4cf5c053166a0264921006b5a3050d3", "239570af38226cb7ea9f0bd9f472c306a5dd0197", "cb8b768e8543b45cbf8da9ce706febc92913426b", "cabf77aef268fb4767ae4598e3221ff56aee225d", "5e27ba9f609cc4ec365369b500341c2ba29b4ec5", "70b67f3129140611ea81e5301134be1e015c7a6f", "291b040e677dc6b279a80e213079864d8efa76b1", "b88752c45848055f7a21e01b85b858088a92ab0e", "cab7d98d903c72d37ebeab278a75471e7a626a39", "e9134ad3e5e2000d979dc952f930fc82e5851c8e", "e66ffb352acbae66975604d82b90cf457362cdd5", "044fd6509996ca538563689680e64460c5f552b8", "9ecae9cf72201b952820d469902efc0462496c18", "8bc4337f4d72e6d0107b8060daeaa7e77502f7be", "4b10137023ea83c1c3c267817964c7168a791106", "9997a21073fdfff0cd935dbc87726564f6eb1b4b", "869f503f461b17f349ead22cac800b80ea9a28ce", "71930b1e953f3d282695d5fbc7fcff75c680f903", "05cfe0d70b6b601a3d6ae4daf891610fde78916d", "2e2b77454d5de6679e0bd7327da9890ae14a3166", "28cc0e669e1e3da1113e854fe3bfc57cbfe70dca", "ae51a5e5f3d9e5625a0e1dcee7d99d30aa51faad", "0f8f19d1e46d0cdeb74951efb8e2ebaaa5cc4f57", "a0f6eb7031edf75c262d1d30f5bd16af84e6619a", "52ff6c9fc205b6cbcd45569ae76483d916a78182", "97e4587adbeec2902fa84e1a65ff61c18d7ca342", "6ec00c27cbbc0bf5c386ad3b142031e191725948", "3fc44001ea572fffa8750106885da22e8ec84009", "ecc20dd81a74db28e8ca78dc57b7acb0cb8360f8", "9dc1d2312605ed5e00e5e77d7d9d3d518df701f3", "3f065a82e6a0da880d4d513a79ee684afd08aaf7", "0e35b873d678b3537e31855e5c38ac6171570cdb", "e68be1ec71cc666c5d544c9abf1cb613fe68ba39", "8bb5717eea67578be8c4bf8d789e6b991dad06a7", "6ff6a51dbc53f67e7a111efa8e35c4f7586e468a", "c95d1b7055e0778ba43e2e6377f6d6c2e46a688e", "def0dc1e4a04aaae364e9779838a32716ca2de4e", "4aad7a8200e806998e366f3a0f5af94150af3b24", "366243c3c73dbeb536b3fb05f916eafbaeea15bd", "270df857bfac857728f9a8fa1f80a8dd11c4b46c", "f9f384d6e645b82e8efa04cf12b7a7a573d9158e", "c72d5c4a2795289d033e5e988f878e4586daafed", "db3a4159a169a2457371f755cb45f715940224c4", "13f53f498c5cc90a5f32fb2da67d82913c668423", "f9efbaf6d8d32b3403ea969406ca4c25ef83acc4", "69f5401f475100e3ea9ffd742800123e562900a3", "c12f0717773233f13251c1421f5fb0b1ce0cebd1", "ca82c92f1dd81adc502135603d1170b1a319213b", "db80f170fe4c085760db2a0aeabc683eba22f4b2", "2e4510a47dfcdbca1482bf719750bd1de46bb476", "194d2d008eb1c8cf618d780bea0eef5eaad45fcf", "e4f3b3ca385fa296e8a47324776487aad5a26ad3", "3f6cfd96843cb91f7e4c88657688915e60dd9320", "d767ce6863b7831ee1f197c4a232490c5d2d0530", "cefaf0cafc6b02fcf220438cc4bd42713bcbdc35", "684bfd3cc7fb0bd7eaa4a8cdd3a5cc3691db4e08", "57bb9fbf27392a2aefd8cbdb5b838fa26be57814", "96c6739f6517b51ab2b53261ed2f19c731565e97", "eed81ed6dea2104642662643845da7f133b74d3d", "c6b43a20517e9ab47d1f4323adb3d07ad3830f9a", "a9b559caa663a7cb6f217bd13af314858e50c2b7", "6d5bc052effc8d8a1fcd6a19dd673f50faff13e2", "a3c7d50227dc4613c0e37d32f4d4d3b386dcb1b5", "983c1242346b0289300a6de0e8f7746df5bd9435"]
+    }],
+    "warning_list": null
+  }, {
+    "filename": "acceptance_test.go",
+    "failure_list": [{
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: \"accessKey=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: 05db785bf1e1712f69b81eeb9956bd797b956e7179ebe3cb7bb2cd9be037a24c",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: 1db800b79e6e9695adc451f77be974dc47bcd84d42873560d7767bfca30db8b1",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Potential secret pattern : awsAccessKeyIDExample string =",
+      "commits": ["e9134ad3e5e2000d979dc952f930fc82e5851c8e", "ecc20dd81a74db28e8ca78dc57b7acb0cb8360f8", "69f5401f475100e3ea9ffd742800123e562900a3", "9dc1d2312605ed5e00e5e77d7d9d3d518df701f3", "3f065a82e6a0da880d4d513a79ee684afd08aaf7", "0e35b873d678b3537e31855e5c38ac6171570cdb", "e68be1ec71cc666c5d544c9abf1cb613fe68ba39", "8bb5717eea67578be8c4bf8d789e6b991dad06a7", "6ff6a51dbc53f67e7a111efa8e35c4f7586e468a", "c95d1b7055e0778ba43e2e6377f6d6c2e46a688e", "13f53f498c5cc90a5f32fb2da67d82913c668423", "a0f6eb7031edf75c262d1d30f5bd16af84e6619a", "c12f0717773233f13251c1421f5fb0b1ce0cebd1", "52ff6c9fc205b6cbcd45569ae76483d916a78182", "97e4587adbeec2902fa84e1a65ff61c18d7ca342", "def0dc1e4a04aaae364e9779838a32716ca2de4e", "4aad7a8200e806998e366f3a0f5af94150af3b24", "366243c3c73dbeb536b3fb05f916eafbaeea15bd", "270df857bfac857728f9a8fa1f80a8dd11c4b46c", "f9f384d6e645b82e8efa04cf12b7a7a573d9158e", "6ec00c27cbbc0bf5c386ad3b142031e191725948", "c72d5c4a2795289d033e5e988f878e4586daafed", "3fc44001ea572fffa8750106885da22e8ec84009", "db3a4159a169a2457371f755cb45f715940224c4", "936b6917bc8dfbf520b61fef97ebe29831ca5038", "2e4510a47dfcdbca1482bf719750bd1de46bb476", "e4f3b3ca385fa296e8a47324776487aad5a26ad3", "ca82c92f1dd81adc502135603d1170b1a319213b", "194d2d008eb1c8cf618d780bea0eef5eaad45fcf", "3f6cfd96843cb91f7e4c88657688915e60dd9320", "d767ce6863b7831ee1f197c4a232490c5d2d0530", "cefaf0cafc6b02fcf220438cc4bd42713bcbdc35", "684bfd3cc7fb0bd7eaa4a8cdd3a5cc3691db4e08", "57bb9fbf27392a2aefd8cbdb5b838fa26be57814", "96c6739f6517b51ab2b53261ed2f19c731565e97", "eed81ed6dea2104642662643845da7f133b74d3d", "c6b43a20517e9ab47d1f4323adb3d07ad3830f9a", "a9b559caa663a7cb6f217bd13af314858e50c2b7", "a3c7d50227dc4613c0e37d32f4d4d3b386dcb1b5", "983c1242346b0289300a6de0e8f7746df5bd9435", "5e27ba9f609cc4ec365369b500341c2ba29b4ec5", "99363815a28e012457360a220dd315b0d934e35a", "417adb453332ed957c0f5ac36320324d365c8330", "1bb374f8a47647e6e51336f768df1975b2fd5b9b", "e66ffb352acbae66975604d82b90cf457362cdd5", "c0861abf8a3a16af274c2516ca0eb977364ed72a", "af07fc983236d46ef51067a1b9da46e5fdc5992f", "db7e5febcbbaa8f80c8ada4a739e5156b7893c5e", "e31df60323c1c5aeefe7019301d0f8f1f75e0477", "8bc4337f4d72e6d0107b8060daeaa7e77502f7be", "a37b8197fcd13ad86c982d91ea401534d07d5754", "511e5b2652ad1653707528bd7dd5f6e8242b4eba", "9f36cbd1c0ef27061bfea949de732274fe4ec282", "6c71cd338e9c34822b4ffbc7c273c30829aaef64", "d8d64011c513a85397efe3866a95793e577b51d8", "869f503f461b17f349ead22cac800b80ea9a28ce", "8213369308d60e15218d810a47c00ae53cb7dfdf", "7ebc4b20b529ff020c5c8949c64aaf8b8299bc07", "05cfe0d70b6b601a3d6ae4daf891610fde78916d", "18d1a929a4cf5c053166a0264921006b5a3050d3", "2e2b77454d5de6679e0bd7327da9890ae14a3166", "239570af38226cb7ea9f0bd9f472c306a5dd0197", "cb8b768e8543b45cbf8da9ce706febc92913426b", "28cc0e669e1e3da1113e854fe3bfc57cbfe70dca", "cabf77aef268fb4767ae4598e3221ff56aee225d", "ae51a5e5f3d9e5625a0e1dcee7d99d30aa51faad", "70b67f3129140611ea81e5301134be1e015c7a6f", "291b040e677dc6b279a80e213079864d8efa76b1", "b88752c45848055f7a21e01b85b858088a92ab0e", "cab7d98d903c72d37ebeab278a75471e7a626a39", "044fd6509996ca538563689680e64460c5f552b8", "9ecae9cf72201b952820d469902efc0462496c18", "4b10137023ea83c1c3c267817964c7168a791106", "9997a21073fdfff0cd935dbc87726564f6eb1b4b", "71930b1e953f3d282695d5fbc7fcff75c680f903", "6d5bc052effc8d8a1fcd6a19dd673f50faff13e2", "0f8f19d1e46d0cdeb74951efb8e2ebaaa5cc4f57", "f9efbaf6d8d32b3403ea969406ca4c25ef83acc4", "a230499d74e044fa158aae1bd31d7c9c4c524f0d", "db80f170fe4c085760db2a0aeabc683eba22f4b2"]
+    }],
+    "warning_list": null
+  }, {
+    "filename": "go.sum",
+    "failure_list": [{
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:vsDQFd/mU46D+Z4whnwzcISnGGzXWMclvtLoiIKAKIo=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:Bjnpnh9uWKwG3KMbwY+ZlqVZ11MH9yTPxcNjFUB7HMk=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:DYY7MBk1bdzusC3SYhjObp+wFpr4gzcvqqNjLnInEg4=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:5zdDAMuB3gvbHB1m2BZT9+t9w+xaBmK3ehb7skDXcwM=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:Yt7X+jyl7iyieH6aiMRd9gCaUT7Rw+wTKlzUVjjeaQ4=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:YroD6BJCZBYx06yYFEWvUuKVWQn3vLLQAVmDmvTSaiQ=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:lfGJxY7ToLJQjHHwi0EX6uYBdK78egf954SQl13PQJc=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:mUhvW9EsL+naU5Q3cakzfE91YhliOondGd6ZrsDBHQE=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:nZJIJPGow0Kf9bU9QTc1U6OXbs/7Hu4e+cNv+hxH+Zc=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:2BvfKmzob6Bmd4YsL0zygOqfdFnK7GR4QL06Do4/p7Y=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:JwYml1nuB7xOzsp52dPpHFffvOCDupsG0QubkSMEySY=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:tIZXYkJpFsIHxPd2MFqrzoQ33BQPneuY1hroVT1qpGk=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:C+X3KsSTLFVBr/tK1eYN/vs4rJcvsiLU338UhYPJWeY=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:zPAT6CGy6wXeQ7NtTnaTerfKOsV6V6F8agHXFiazDkg=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:rmk17hk6i8ZSAJkSDa7nOxamrG+SP4P0mm+DAvExv4U=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:UD6OnuiIn0yFxxA2le/rnRU1G4RaI4UvFv1sNto9p6w=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:NsKVpF4h4j13Vm6Cx7Kf0V03aJKjfaStvm5rvK4+FyQ=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:LwmH8dsx7+W8Uxz3IHJYH5QSwggIsqBzpuz5H//U1FU=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:yhCVgyC4o1eVCa2tZl7eS0r+SDo693bJlVdllGtEeKM=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:Sd9lOJ0+aimLBi73mGofS1ycjY8lL3uZM3JPS42BGNg=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:b3iUnf1v+ppJiOfNX4yxxqfWKMQPZR5yoh8urCTFX88=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:SdCq5U4J+PpbSDIl9bM0V1e1Ug1jsnBkAFvTs1htn7U=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:WqCK3j5a2lJAQS/IMCLSLahINAQyI0P/RLp8WdEVR/M=",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=",
+      "commits": []
+    }],
+    "warning_list": null
+  }, {
+    "filename": "pre_push_hook.go",
+    "failure_list": [{
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: \"4b825dc642cb6eb9a060e54bf8d69288fbee4904\"",
+      "commits": []
+    }],
+    "warning_list": null
+  }, {
+    "filename": "detector/pattern_detector_test.go",
+    "failure_list": [{
+      "type": "",
+      "message": "Potential secret pattern : AWS key :",
+      "commits": ["ecc20dd81a74db28e8ca78dc57b7acb0cb8360f8", "69f5401f475100e3ea9ffd742800123e562900a3", "9dc1d2312605ed5e00e5e77d7d9d3d518df701f3", "3f065a82e6a0da880d4d513a79ee684afd08aaf7", "0e35b873d678b3537e31855e5c38ac6171570cdb", "e68be1ec71cc666c5d544c9abf1cb613fe68ba39", "8bb5717eea67578be8c4bf8d789e6b991dad06a7", "6ff6a51dbc53f67e7a111efa8e35c4f7586e468a", "c95d1b7055e0778ba43e2e6377f6d6c2e46a688e", "13f53f498c5cc90a5f32fb2da67d82913c668423", "c12f0717773233f13251c1421f5fb0b1ce0cebd1", "f9efbaf6d8d32b3403ea969406ca4c25ef83acc4", "def0dc1e4a04aaae364e9779838a32716ca2de4e", "4aad7a8200e806998e366f3a0f5af94150af3b24", "366243c3c73dbeb536b3fb05f916eafbaeea15bd", "270df857bfac857728f9a8fa1f80a8dd11c4b46c", "f9f384d6e645b82e8efa04cf12b7a7a573d9158e", "c72d5c4a2795289d033e5e988f878e4586daafed", "3f6cfd96843cb91f7e4c88657688915e60dd9320", "0f8f19d1e46d0cdeb74951efb8e2ebaaa5cc4f57", "a0f6eb7031edf75c262d1d30f5bd16af84e6619a", "52ff6c9fc205b6cbcd45569ae76483d916a78182", "97e4587adbeec2902fa84e1a65ff61c18d7ca342", "6ec00c27cbbc0bf5c386ad3b142031e191725948", "3fc44001ea572fffa8750106885da22e8ec84009", "5e27ba9f609cc4ec365369b500341c2ba29b4ec5", "99363815a28e012457360a220dd315b0d934e35a", "417adb453332ed957c0f5ac36320324d365c8330", "a230499d74e044fa158aae1bd31d7c9c4c524f0d", "1bb374f8a47647e6e51336f768df1975b2fd5b9b", "c0861abf8a3a16af274c2516ca0eb977364ed72a", "af07fc983236d46ef51067a1b9da46e5fdc5992f", "db7e5febcbbaa8f80c8ada4a739e5156b7893c5e", "e31df60323c1c5aeefe7019301d0f8f1f75e0477", "a37b8197fcd13ad86c982d91ea401534d07d5754", "db80f170fe4c085760db2a0aeabc683eba22f4b2", "511e5b2652ad1653707528bd7dd5f6e8242b4eba", "9f36cbd1c0ef27061bfea949de732274fe4ec282", "6c71cd338e9c34822b4ffbc7c273c30829aaef64", "d8d64011c513a85397efe3866a95793e577b51d8", "8213369308d60e15218d810a47c00ae53cb7dfdf", "7ebc4b20b529ff020c5c8949c64aaf8b8299bc07", "18d1a929a4cf5c053166a0264921006b5a3050d3", "239570af38226cb7ea9f0bd9f472c306a5dd0197", "cb8b768e8543b45cbf8da9ce706febc92913426b", "cabf77aef268fb4767ae4598e3221ff56aee225d"]
+    }, {
+      "type": "",
+      "message": "Potential secret pattern : BEGIN RSA PRIVATE KEY-----\naghjdjadslgjagsfjlsgjalsgjaghjldasja\n-----END RSA PRIVATE KEY",
+      "commits": ["ecc20dd81a74db28e8ca78dc57b7acb0cb8360f8", "69f5401f475100e3ea9ffd742800123e562900a3", "9dc1d2312605ed5e00e5e77d7d9d3d518df701f3", "3f065a82e6a0da880d4d513a79ee684afd08aaf7", "0e35b873d678b3537e31855e5c38ac6171570cdb", "e68be1ec71cc666c5d544c9abf1cb613fe68ba39", "8bb5717eea67578be8c4bf8d789e6b991dad06a7", "6ff6a51dbc53f67e7a111efa8e35c4f7586e468a", "c95d1b7055e0778ba43e2e6377f6d6c2e46a688e", "13f53f498c5cc90a5f32fb2da67d82913c668423", "c12f0717773233f13251c1421f5fb0b1ce0cebd1", "f9efbaf6d8d32b3403ea969406ca4c25ef83acc4", "def0dc1e4a04aaae364e9779838a32716ca2de4e", "4aad7a8200e806998e366f3a0f5af94150af3b24", "366243c3c73dbeb536b3fb05f916eafbaeea15bd", "270df857bfac857728f9a8fa1f80a8dd11c4b46c", "f9f384d6e645b82e8efa04cf12b7a7a573d9158e", "c72d5c4a2795289d033e5e988f878e4586daafed", "3f6cfd96843cb91f7e4c88657688915e60dd9320", "0f8f19d1e46d0cdeb74951efb8e2ebaaa5cc4f57", "a0f6eb7031edf75c262d1d30f5bd16af84e6619a", "52ff6c9fc205b6cbcd45569ae76483d916a78182", "97e4587adbeec2902fa84e1a65ff61c18d7ca342", "6ec00c27cbbc0bf5c386ad3b142031e191725948", "3fc44001ea572fffa8750106885da22e8ec84009", "5e27ba9f609cc4ec365369b500341c2ba29b4ec5", "99363815a28e012457360a220dd315b0d934e35a", "417adb453332ed957c0f5ac36320324d365c8330", "a230499d74e044fa158aae1bd31d7c9c4c524f0d", "1bb374f8a47647e6e51336f768df1975b2fd5b9b", "c0861abf8a3a16af274c2516ca0eb977364ed72a", "af07fc983236d46ef51067a1b9da46e5fdc5992f", "db7e5febcbbaa8f80c8ada4a739e5156b7893c5e", "e31df60323c1c5aeefe7019301d0f8f1f75e0477", "a37b8197fcd13ad86c982d91ea401534d07d5754", "db80f170fe4c085760db2a0aeabc683eba22f4b2", "511e5b2652ad1653707528bd7dd5f6e8242b4eba", "9f36cbd1c0ef27061bfea949de732274fe4ec282", "6c71cd338e9c34822b4ffbc7c273c30829aaef64", "d8d64011c513a85397efe3866a95793e577b51d8", "8213369308d60e15218d810a47c00ae53cb7dfdf", "7ebc4b20b529ff020c5c8949c64aaf8b8299bc07", "18d1a929a4cf5c053166a0264921006b5a3050d3", "239570af38226cb7ea9f0bd9f472c306a5dd0197", "cb8b768e8543b45cbf8da9ce706febc92913426b", "cabf77aef268fb4767ae4598e3221ff56aee225d"]
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: \"833b6c24c8c2c5c7e1663226dc401b29c005492dc76a1150fc0e0f07f29d4cc3\",",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Potential secret pattern : \u003cpassword data=123\u003e jdghfakjkdha\u003c/password\u003e",
+      "commits": ["ecc20dd81a74db28e8ca78dc57b7acb0cb8360f8", "69f5401f475100e3ea9ffd742800123e562900a3", "9dc1d2312605ed5e00e5e77d7d9d3d518df701f3", "3f065a82e6a0da880d4d513a79ee684afd08aaf7", "0e35b873d678b3537e31855e5c38ac6171570cdb", "e68be1ec71cc666c5d544c9abf1cb613fe68ba39", "8bb5717eea67578be8c4bf8d789e6b991dad06a7", "6ff6a51dbc53f67e7a111efa8e35c4f7586e468a", "c95d1b7055e0778ba43e2e6377f6d6c2e46a688e", "13f53f498c5cc90a5f32fb2da67d82913c668423", "c12f0717773233f13251c1421f5fb0b1ce0cebd1", "f9efbaf6d8d32b3403ea969406ca4c25ef83acc4", "def0dc1e4a04aaae364e9779838a32716ca2de4e", "4aad7a8200e806998e366f3a0f5af94150af3b24", "366243c3c73dbeb536b3fb05f916eafbaeea15bd", "270df857bfac857728f9a8fa1f80a8dd11c4b46c", "f9f384d6e645b82e8efa04cf12b7a7a573d9158e", "c72d5c4a2795289d033e5e988f878e4586daafed", "3f6cfd96843cb91f7e4c88657688915e60dd9320", "0f8f19d1e46d0cdeb74951efb8e2ebaaa5cc4f57", "a0f6eb7031edf75c262d1d30f5bd16af84e6619a", "52ff6c9fc205b6cbcd45569ae76483d916a78182", "97e4587adbeec2902fa84e1a65ff61c18d7ca342", "6ec00c27cbbc0bf5c386ad3b142031e191725948", "3fc44001ea572fffa8750106885da22e8ec84009", "5e27ba9f609cc4ec365369b500341c2ba29b4ec5", "99363815a28e012457360a220dd315b0d934e35a", "417adb453332ed957c0f5ac36320324d365c8330", "a230499d74e044fa158aae1bd31d7c9c4c524f0d", "1bb374f8a47647e6e51336f768df1975b2fd5b9b", "c0861abf8a3a16af274c2516ca0eb977364ed72a", "af07fc983236d46ef51067a1b9da46e5fdc5992f", "db7e5febcbbaa8f80c8ada4a739e5156b7893c5e", "e31df60323c1c5aeefe7019301d0f8f1f75e0477", "a37b8197fcd13ad86c982d91ea401534d07d5754", "db80f170fe4c085760db2a0aeabc683eba22f4b2", "511e5b2652ad1653707528bd7dd5f6e8242b4eba", "9f36cbd1c0ef27061bfea949de732274fe4ec282", "6c71cd338e9c34822b4ffbc7c273c30829aaef64", "d8d64011c513a85397efe3866a95793e577b51d8", "8213369308d60e15218d810a47c00ae53cb7dfdf", "7ebc4b20b529ff020c5c8949c64aaf8b8299bc07", "18d1a929a4cf5c053166a0264921006b5a3050d3", "239570af38226cb7ea9f0bd9f472c306a5dd0197", "cb8b768e8543b45cbf8da9ce706febc92913426b", "cabf77aef268fb4767ae4598e3221ff56aee225d"]
+    }, {
+      "type": "",
+      "message": "Potential secret pattern : \u003cpassphrase data=123\u003e AasdfYlLKHKLasdKHAFKHSKmlahsdfLK\u003c/passphrase\u003e",
+      "commits": ["ecc20dd81a74db28e8ca78dc57b7acb0cb8360f8", "69f5401f475100e3ea9ffd742800123e562900a3", "9dc1d2312605ed5e00e5e77d7d9d3d518df701f3", "3f065a82e6a0da880d4d513a79ee684afd08aaf7", "0e35b873d678b3537e31855e5c38ac6171570cdb", "e68be1ec71cc666c5d544c9abf1cb613fe68ba39", "8bb5717eea67578be8c4bf8d789e6b991dad06a7", "6ff6a51dbc53f67e7a111efa8e35c4f7586e468a", "c95d1b7055e0778ba43e2e6377f6d6c2e46a688e", "13f53f498c5cc90a5f32fb2da67d82913c668423", "c12f0717773233f13251c1421f5fb0b1ce0cebd1", "f9efbaf6d8d32b3403ea969406ca4c25ef83acc4", "def0dc1e4a04aaae364e9779838a32716ca2de4e", "4aad7a8200e806998e366f3a0f5af94150af3b24", "366243c3c73dbeb536b3fb05f916eafbaeea15bd", "270df857bfac857728f9a8fa1f80a8dd11c4b46c", "f9f384d6e645b82e8efa04cf12b7a7a573d9158e", "c72d5c4a2795289d033e5e988f878e4586daafed", "3f6cfd96843cb91f7e4c88657688915e60dd9320", "0f8f19d1e46d0cdeb74951efb8e2ebaaa5cc4f57", "a0f6eb7031edf75c262d1d30f5bd16af84e6619a", "52ff6c9fc205b6cbcd45569ae76483d916a78182", "97e4587adbeec2902fa84e1a65ff61c18d7ca342", "6ec00c27cbbc0bf5c386ad3b142031e191725948", "3fc44001ea572fffa8750106885da22e8ec84009", "5e27ba9f609cc4ec365369b500341c2ba29b4ec5", "99363815a28e012457360a220dd315b0d934e35a", "417adb453332ed957c0f5ac36320324d365c8330", "a230499d74e044fa158aae1bd31d7c9c4c524f0d", "1bb374f8a47647e6e51336f768df1975b2fd5b9b", "c0861abf8a3a16af274c2516ca0eb977364ed72a", "af07fc983236d46ef51067a1b9da46e5fdc5992f", "db7e5febcbbaa8f80c8ada4a739e5156b7893c5e", "e31df60323c1c5aeefe7019301d0f8f1f75e0477", "a37b8197fcd13ad86c982d91ea401534d07d5754", "db80f170fe4c085760db2a0aeabc683eba22f4b2", "511e5b2652ad1653707528bd7dd5f6e8242b4eba", "9f36cbd1c0ef27061bfea949de732274fe4ec282", "6c71cd338e9c34822b4ffbc7c273c30829aaef64", "d8d64011c513a85397efe3866a95793e577b51d8", "8213369308d60e15218d810a47c00ae53cb7dfdf", "7ebc4b20b529ff020c5c8949c64aaf8b8299bc07", "18d1a929a4cf5c053166a0264921006b5a3050d3", "239570af38226cb7ea9f0bd9f472c306a5dd0197", "cb8b768e8543b45cbf8da9ce706febc92913426b", "cabf77aef268fb4767ae4598e3221ff56aee225d"]
+    }, {
+      "type": "",
+      "message": "Potential secret pattern : \u003cConsumerKey\u003ealksjdhfkjaklsdhflk12345adskjf\u003c/ConsumerKey\u003e",
+      "commits": ["ecc20dd81a74db28e8ca78dc57b7acb0cb8360f8", "69f5401f475100e3ea9ffd742800123e562900a3", "9dc1d2312605ed5e00e5e77d7d9d3d518df701f3", "3f065a82e6a0da880d4d513a79ee684afd08aaf7", "0e35b873d678b3537e31855e5c38ac6171570cdb", "e68be1ec71cc666c5d544c9abf1cb613fe68ba39", "8bb5717eea67578be8c4bf8d789e6b991dad06a7", "6ff6a51dbc53f67e7a111efa8e35c4f7586e468a", "c95d1b7055e0778ba43e2e6377f6d6c2e46a688e", "13f53f498c5cc90a5f32fb2da67d82913c668423", "c12f0717773233f13251c1421f5fb0b1ce0cebd1", "f9efbaf6d8d32b3403ea969406ca4c25ef83acc4", "def0dc1e4a04aaae364e9779838a32716ca2de4e", "4aad7a8200e806998e366f3a0f5af94150af3b24", "366243c3c73dbeb536b3fb05f916eafbaeea15bd", "270df857bfac857728f9a8fa1f80a8dd11c4b46c", "f9f384d6e645b82e8efa04cf12b7a7a573d9158e", "c72d5c4a2795289d033e5e988f878e4586daafed", "3f6cfd96843cb91f7e4c88657688915e60dd9320", "0f8f19d1e46d0cdeb74951efb8e2ebaaa5cc4f57", "a0f6eb7031edf75c262d1d30f5bd16af84e6619a", "52ff6c9fc205b6cbcd45569ae76483d916a78182", "97e4587adbeec2902fa84e1a65ff61c18d7ca342", "6ec00c27cbbc0bf5c386ad3b142031e191725948", "3fc44001ea572fffa8750106885da22e8ec84009", "5e27ba9f609cc4ec365369b500341c2ba29b4ec5", "99363815a28e012457360a220dd315b0d934e35a", "417adb453332ed957c0f5ac36320324d365c8330", "a230499d74e044fa158aae1bd31d7c9c4c524f0d", "1bb374f8a47647e6e51336f768df1975b2fd5b9b", "c0861abf8a3a16af274c2516ca0eb977364ed72a", "af07fc983236d46ef51067a1b9da46e5fdc5992f", "db7e5febcbbaa8f80c8ada4a739e5156b7893c5e", "e31df60323c1c5aeefe7019301d0f8f1f75e0477", "a37b8197fcd13ad86c982d91ea401534d07d5754", "db80f170fe4c085760db2a0aeabc683eba22f4b2", "511e5b2652ad1653707528bd7dd5f6e8242b4eba", "9f36cbd1c0ef27061bfea949de732274fe4ec282", "6c71cd338e9c34822b4ffbc7c273c30829aaef64", "d8d64011c513a85397efe3866a95793e577b51d8", "8213369308d60e15218d810a47c00ae53cb7dfdf", "7ebc4b20b529ff020c5c8949c64aaf8b8299bc07", "18d1a929a4cf5c053166a0264921006b5a3050d3", "239570af38226cb7ea9f0bd9f472c306a5dd0197", "cb8b768e8543b45cbf8da9ce706febc92913426b", "cabf77aef268fb4767ae4598e3221ff56aee225d"]
+    }],
+    "warning_list": null
+  }, {
+    "filename": "detector/word_check_test.go",
+    "failure_list": [{
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: wc.containsWordsOnly(\"wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY\")",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: wc.containsWordsOnly(\"wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEYhelloWorldGreetingsFromThoughtWorks\")",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: wc.containsWordsOnly(\"68656C6C6F20776F726C6421\")",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: wc.containsWordsOnly(\"68656C6C6F20776F726C6421helloWorldGreetingsFromThoughtWorks\")",
+      "commits": []
+    }],
+    "warning_list": null
+  }, {
+    "filename": "detector/hex_detector_test.go",
+    "failure_list": [{
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: \"6A6176617375636B73676F726F636B7368616861\"",
+      "commits": []
+    }],
+    "warning_list": null
+  }, {
+    "filename": "detector/filecontent_credit_card_detector_test.go",
+    "failure_list": [{
+      "type": "",
+      "message": "Expected file to not to contain credit card numbers such as: NewCreditCardDetector().checkCreditCardNumber(\"1234123412341234\"))",
+      "commits": []
+    }],
+    "warning_list": null
+  }, {
+    "filename": "detector/checksum_compare_test.go",
+    "failure_list": [{
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: \"25bd31a28bf9d4e06327f1c4a5cab2260574ae508803f66adcc393350e994866\",",
+      "commits": ["12345avcd", "675gftd"]
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: '87139cc4d975333b25b6275f97680604add51b84eb8f4a3b9dcbbc652e6f27ac'",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: '25bd31a28bf9d4e06327f1c4a5cab2260574ae508803f66adcc393350e994866'",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: \"87139cc4d975333b25b6275f97680604add51b84eb8f4a3b9dcbbc652e6f27ac\",",
+      "commits": []
+    }],
+    "warning_list": null
+  }, {
+    "filename": "detector/hex_detector.go",
+    "failure_list": [{
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: \"1234567890abcdefABCDEF\"",
+      "commits": []
+    }],
+    "warning_list": null
+  }, {
+    "filename": "README.md",
+    "failure_list": [{
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: install.sh](https://github.com/thoughtworks/talisman/blob/d4b1b1d11137dbb173bf681a03f16183a9d82255/install.sh#L10)",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: awsSecretKey=c64e8c79aacf5ddb02f1274db2d973f363f4f553ab1692d8d203b4cc09692f79",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: cf97abd34cebe895417eb4d97fbd7374aa138dcb65b1fe7f6b6cc1238aaf4d48",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: install.sh](https://github.com/thoughtworks/talisman/blob/d4b1b1d11137dbb173bf681a03f16183a9d82255/install.sh#L10)",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: install.sh](https://github.com/thoughtworks/talisman/blob/d4b1b1d11137dbb173bf681a03f16183a9d82255/install.sh#L16-L18)",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: install.sh](https://github.com/thoughtworks/talisman/blob/d4b1b1d11137dbb173bf681a03f16183a9d82255/install.sh#L16-L18)",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: f731b26be086fd2647c40801630e2219ef207cb1aacc02f9bf0559a75c0855a4",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: d9e9e94868d7de5b2a0706b8d38d0f79730839e0eb4de4e9a2a5a014c7c43f35",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: [`talisman.go:11`](https://github.com/thoughtworks/talisman/blob/d4b1b1d11137dbb173bf681a03f16183a9d82255/talisman.go#L11).",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: [`talisman.go:11`](https://github.com/thoughtworks/talisman/blob/d4b1b1d11137dbb173bf681a03f16183a9d82255/talisman.go#L11).",
+      "commits": []
+    }],
+    "warning_list": null
+  }, {
+    "filename": "detector/base64_detector.go",
+    "failure_list": [{
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=\"",
+      "commits": []
+    }],
+    "warning_list": null
+  }, {
+    "filename": "detector/base64_detector_test.go",
+    "failure_list": [{
+      "type": "",
+      "message": "Expected file to not to contain base64 encoded texts such as: \"wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY\"",
+      "commits": []
+    }],
+    "warning_list": null
+  }, {
+    "filename": "install.sh",
+    "failure_list": [{
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: EXPECTED_BINARY_SHA_LINUX_X86=\"274a7e77a68c75a33e0cf27185ce885bee95c2ca13ad553a953b58e85cd2a75d\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: EXPECTED_BINARY_SHA_LINUX_AMD64=\"92b9a75e04451ca71cb7b75dae395cced4b68e3d62a0df68d7062fda3b32563d\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: EXPECTED_BINARY_SHA_DARWIN_AMD64=\"f5084c41f2350423f39fd2e719397e959f306e5e18ab0daff4be69547106f936\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: EXPECTED_BINARY_SHA_LINUX_AMD64=\"55200e0e7ab572b33675b7f4c7af50597361fdc4e8f219e04bc08b0ba9f7426c\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: EXPECTED_BINARY_SHA_DARWIN_AMD64=\"30b6252eb2aa8a2e97ba50961d3f3a692359d2ca1debad698c5d50fa81ed8a61\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: EXPECTED_BINARY_SHA_LINUX_AMD64=\"fdfa31d22e5acaef3ca2f57b1036f4c2f3b9601b00524c753a5919a6c8fa3cd3\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: EXPECTED_BINARY_SHA_DARWIN_AMD64=\"6ce0b9e392059e01dac8e89763c964579fed4f1a33456d122b780af52affc578\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: EXPECTED_BINARY_SHA_DARWIN_AMD64=\"315720cbda5fc11712fe3269778b6a57c796ffc5a6596990f208635c8b53edf0\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: EXPECTED_BINARY_SHA_LINUX_X86=\"332bb7a1295f45d2efaac48757f4f8c513a4cca563ebc86f964c985be7aaed51\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: EXPECTED_BINARY_SHA_DARWIN_AMD64=\"e66c2b21b69ab80f4474d3cc3f591f6ca68e2b76a96337e7eb807fc305e518f1\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: EXPECTED_BINARY_SHA_LINUX_X86=\"181f2f88153be912bfc835563d55bea2b5b83c259312f489a71ad3a0358c097e\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: EXPECTED_BINARY_SHA_LINUX_X86=\"891413d81f39a20b2ea64c23444351546ae97c168f182375dece4eec024c265c\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: EXPECTED_BINARY_SHA_LINUX_AMD64=\"8c0ba72fb018892b48c8e63f5e579b5bd72ec5f9d284f31c35a5382f77685834\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: EXPECTED_BINARY_SHA_LINUX_X86=\"2158e8b1c5ad57009565e4ce8d39a4511c71802caf4b91843c8feb2f9d796673\"",
+      "commits": []
+    }, {
+      "type": "",
+      "message": "Expected file to not to contain hex encoded texts such as: EXPECTED_BINARY_SHA_LINUX_AMD64=\"6b36b74057f3878d564b944dcd42fa5c0c9bace5de80c7273850b6eb990599de\"",
+      "commits": []
+    }],
+    "warning_list": null
+  }]
+}

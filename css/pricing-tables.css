@@ -1,0 +1,397 @@
+.pricing-table {
+	min-width: 670px;
+	text-align: center;
+	background-color: transparent;
+}
+
+.pricing-table td {
+	position: relative;
+	display: inline-block;
+	margin: 0 5px;
+	vertical-align: text-top;
+}
+
+
+
+/* Plan Title */
+.pricing-table thead .plan td {
+	width: 210px;
+	height: 42px;
+	padding: 15px 0;
+	text-align: center;
+
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.pricing-table thead .plan h2 {
+	font-family: 'Arial Black', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 12px;
+}
+
+.pricing-table thead .plan em {
+	font-family: Georgia, Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.pricing-table thead .plan td {
+	color: #fafafa;
+	text-shadow: 1px 1px 0px rgba(0,0,0, .4);
+	background-color: #b34e01;
+	height: 60px;
+}
+/*
+.pricing-table thead .plan .green {
+	color: #fafafa;
+	text-shadow: 1px 1px 0px rgba(255,255,255, .2);
+	background-color: #ff872c;
+	height: 60px;
+}
+
+.pricing-table thead .plan .orange {
+	color: #fafafa;
+	text-shadow: 1px 1px 2px rgba(0,0,0, .4);
+  height: 60px;
+	background-color: #ff872c;
+}
+
+.pricing-table thead .plan .red {
+	color: #fafafa;
+	text-shadow: 1px 1px 2px rgba(0,0,0, .4);
+  height: 60px;
+	background-color: #ff872c;
+}
+
+.pricing-table thead .plan .yellow {
+	color: #fafafa;
+	text-shadow: 1px 1px 2px rgba(0,0,0, .4);
+  height: 60px;
+	background-color: #ff872c;
+}
+*/
+
+p.green_number {
+    color: #61ab3b;
+    font-size: 20px !important;
+    font-family: courier;
+    margin-bottom: -23px !important;
+}
+
+p.red_number {
+    color: #e65050;
+    font-size: 20px !important;
+    font-family: courier;
+    margin-bottom: -23px !important;
+}
+
+
+p.yellow_number {
+    color: #c7b213;
+    font-size: 20px !important;
+    font-family: courier;
+    margin-bottom: -23px !important;
+}
+
+
+p.orange_number {
+    color: #e86c2f;
+    font-size: 20px !important;
+    font-family: courier;
+    margin-bottom: -23px !important;
+}
+
+
+/* Plan Price Section */
+.pricing-table thead .price td {
+	position: relative;
+	width: 210px;
+	padding: 25px 0;
+
+	font-family: 'Arial Black', Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	color: #b6b07c;
+
+	background: #f9f8f1;
+	background: -moz-linear-gradient(top,  #f9f8f1 0%, #f4f2e2 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f8f1), color-stop(100%,#f4f2e2));
+	background: -webkit-linear-gradient(top,  #f9f8f1 0%,#f4f2e2 100%);
+	background: -o-linear-gradient(top,  #f9f8f1 0%,#f4f2e2 100%);
+	background: -ms-linear-gradient(top,  #f9f8f1 0%,#f4f2e2 100%);
+	background: linear-gradient(to bottom,  #f9f8f1 0%,#f4f2e2 100%);
+}
+
+.pricing-table thead .price p {
+	display: table;
+	margin: 0 auto;
+	font-size: 40px;
+	line-height: 60px;
+}
+
+.pricing-table thead .price p span {
+	font-size: 0.5em;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.pricing-table thead .price span { font-size: 14px; }
+
+.pricing-table thead .price a {
+	display: block;
+	position: absolute;
+	top: 41px;
+	right: -5px;
+	height: 32px;
+	padding: 0 10px;
+	line-height: 32px;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.pricing-table thead .price .green a {
+	color: #fafafa;
+	text-shadow: 1px 1px 0px rgba(255,255,255, .2);
+
+	background: #82d344;
+	background: -moz-linear-gradient(top,  #82d344 0%, #51af34 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#82d344), color-stop(100%,#51af34));
+	background: -webkit-linear-gradient(top,  #82d344 0%,#51af34 100%);
+	background: -o-linear-gradient(top,  #82d344 0%,#51af34 100%);
+	background: -ms-linear-gradient(top,  #82d344 0%,#51af34 100%);
+	background: linear-gradient(to bottom,  #82d344 0%,#51af34 100%);
+}
+
+.pricing-table thead .price .orange a {
+	color: #fafafa;
+	text-shadow: 1px 1px 2px rgba(0,0,0, .3);
+
+	background: #ff8042;
+	background: -moz-linear-gradient(top,  #ff8042 0%, #f55a0e 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff8042), color-stop(100%,#f55a0e));
+	background: -webkit-linear-gradient(top,  #ff8042 0%,#f55a0e 100%);
+	background: -o-linear-gradient(top,  #ff8042 0%,#f55a0e 100%);
+	background: -ms-linear-gradient(top,  #ff8042 0%,#f55a0e 100%);
+	background: linear-gradient(to bottom,  #ff8042 0%,#f55a0e 100%);
+}
+
+.pricing-table thead .price .red a {
+	color: #fafafa;
+	text-shadow: 1px 1px 2px rgba(0,0,0, .3);
+
+	background: #fa5858;
+	background: -moz-linear-gradient(top,  #fa5858 0%, #fa5858 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fa5858), color-stop(100%,#fa5858));
+	background: -webkit-linear-gradient(top,  #fa5858 0%,#fa5858 100%);
+	background: -o-linear-gradient(top,  #fa5858 0%,#fa5858 100%);
+	background: -ms-linear-gradient(top,  #fa5858 0%,#fa5858 100%);
+	background: linear-gradient(to bottom,  #fa5858 0%,#fa5858 100%);
+}
+
+.pricing-table thead .price .yellow a {
+	color: #fafafa;
+	text-shadow: 1px 1px 2px rgba(0,0,0, .3);
+
+	background-color: #F5DA0E;
+	background: -moz-linear-gradient(top,  #F5DA0E 0%, #F5DA0E 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F5DA0E), color-stop(100%,#F5DA0E));
+	background: -webkit-linear-gradient(top,  #F5DA0E 0%,#F5DA0E 100%);
+	background: -o-linear-gradient(top,  #F5DA0E 0%,#F5DA0E 100%);
+	background: -ms-linear-gradient(top,  #F5DA0E 0%,#F5DA0E 100%);
+	background: linear-gradient(to bottom,  #F5DA0E 0%,#F5DA0E 100%);
+}
+
+.pricing-table thead .price .green a:before,
+.pricing-table thead .price .orange a:before,
+.pricing-table thead .price .red a:before,
+.pricing-table thead .price .yellow a:before,
+.pricing-table thead .price .green a:after,
+.pricing-table thead .price .red a:after,
+.pricing-table thead .price .yellow a:after,
+.pricing-table thead .price .orange a:after {
+	display: block;
+	position: absolute;
+	content: '';
+}
+
+.pricing-table thead .price .green a:before,
+.pricing-table thead .price .red a:before,
+.pricing-table thead .price .yellow a:before,
+.pricing-table thead .price .orange a:before {
+	width: 8px;
+	height: 32px;
+	top: 0;
+	left: -8px;
+
+}
+
+.pricing-table thead .price .green a:after,
+.pricing-table thead .price .red a:after,
+.pricing-table thead .price .yellow a:after,
+.pricing-table thead .price .orange a:after {
+	width: 0;
+	height: 0;
+	bottom: -5px;
+	right: 0;
+
+}
+
+.pricing-table thead .price .green a:before { background-position: 0 0; }
+.pricing-table thead .price .orange a:before { background-position: 0 -32px; }
+.pricing-table thead .price .green a:after { border-left: 5px solid #1c5d40; }
+.pricing-table thead .price .orange a:after { border-left: 5px solid #88330a; }
+
+
+
+/* Plan Features Section */
+.pricing-table tbody tr:first-child td:before {
+	position: absolute;
+	display: block;
+	content: '';
+	width: 100%;
+	height: 5px;
+	top: -25px;
+	left: 0;
+	background: url(stripe.png) repeat-x 0 0;
+}
+
+.pricing-table tbody td {
+	width: 170px;
+	padding-left: 40px;
+	line-height: 30px;
+	border-top: 1px solid #f2f2f2;
+
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #828282;
+}
+
+.pricing-table tbody tr:first-child td { border-top: 20px solid #ffffff; }
+
+.pricing-table .clock-icon td,
+.pricing-table .basket-icon td,
+.pricing-table .star-icon td,
+.pricing-table .heart-icon td { background: #ffffff url(../images/icons.png) no-repeat 0 0; }
+
+.pricing-table .clock-icon td { background-position: 0 0; }
+.pricing-table .basket-icon td { background-position: 0 -30px; }
+.pricing-table .star-icon td { background-position: 0 -60px; }
+.pricing-table .heart-icon td { background-position: 0 -90px; }
+
+
+
+/* Plan Description Section */
+.pricing-table tfoot td {
+	width: 190px;
+	padding: 20px 10px;
+	text-align: center;
+	line-height: 18px;
+	background: #ffffff;
+
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #828282;
+
+	-webkit-border-radius: 0 0 2px 2px;
+	-moz-border-radius: 0 0 2px 2px;
+	border-radius: 0 0 2px 2px;
+
+	-webkit-box-shadow: 0px 2px 0px #e4e4e4;
+	-moz-box-shadow: 0px 2px 0px #e4e4e4;
+	box-shadow: 0px 2px 0px #e4e4e4;
+}
+
+/* Float Text Section */
+
+@font-face {
+    font-family: 'Lobster13Regular';
+    src: url('font/Lobster_1.3-webfont.eot');
+    src: url('font/Lobster_1.3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Lobster_1.3-webfont.woff') format('woff'),
+         url('font/Lobster_1.3-webfont.ttf') format('truetype'),
+         url('font/Lobster_1.3-webfont.svg#Lobster13Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.table-float {
+	display: block;
+	position: absolute;
+	width: 300px;
+	padding: 80px 0 0 0;
+	top: 85%;
+	left: 130px;
+}
+
+.table-float p {
+	font-family: Lobster13Regular, sans-serif;
+	font-size: 16px;
+	color: #858585;
+	line-height: 20px;
+}
+
+.table-float p.big {
+	font-size: 65px;
+	color: #f76117;
+	text-align: right;
+	line-height: 65px;
+}
+
+.table-float .arrow {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50px;
+	width: 68px;
+	height: 77px;
+	background: url(../images/arrow.png) no-repeat 0 0;
+}
+
+footer {
+	text-align: center;
+	padding-top: 20px;
+	letter-spacing: 4px;
+	font-size: 10px;
+	position:relative;
+	bottom: 0;
+	height: 20px;
+	width: 100%;
+}
+
+#module-link{
+    text-align: center;
+	padding-top: 20px;
+	letter-spacing: 4px;
+	font-size: 15px;
+	position:relative;
+	bottom: 0;
+	height: 20px;
+	width: 100%;
+}
+
+.type-heading{
+    text-align: center;
+    font-size: 25px;
+    height: 50px;
+    margin-top: 16px;
+}
+
+.info{
+    width: 362px;
+}
+
+.logo-heading{
+	text-align: center;
+}
+
+.talisman-logo, img{
+	width: 70px;
+	height: auto;
+	display: inline-block;
+}
