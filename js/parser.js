@@ -51,10 +51,8 @@
                                  '</a></td></tr>');
 
                                  for(var k=0; k<commitIDs.length; k++){
-                                   commit_table = commit_table.concat('<tr><td>' + k + '</td><td>' + commitIDs[k] + '</td></tr>');
+                                   commit_table = commit_table.concat('<tr><td>' + (k+1) + '</td><td>' + commitIDs[k] + '</td></tr>');
                                  }
-
-
 
                                  $('#lightbox-det').append('<div id="commit-details-' + i +'">' + table_det + commit_table + '</table></div>');
                              }
