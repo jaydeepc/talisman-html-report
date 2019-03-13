@@ -56,5 +56,4 @@ jQuery(document).ready(function($) {
         
     });
 
-
 });

@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="css/owl-carousel.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/pricing-tables.css">
+        <link rel="stylesheet" href="css/dropdown.css">
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
@@ -37,6 +38,7 @@
             <li class="nav-item"><a class="nav-link" href="#home"><span>Home</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#summary"><span>Summary</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#detailed-report"><span>Detailed Report</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#errors"><span>Errors Details</span></a></li>
         </ul>
     </div>
 
@@ -118,7 +120,6 @@
                           <th class="column100 column2" data-column="column2">Name of the file</th>
                           <th class="column100 column3" data-column="column3">Total Errors</th>
                           <th class="column100 column4" data-column="column4">Total Warnings</th>
-                          <th class="column100 column5" data-column="column5">Check commit IDs</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -128,8 +129,56 @@
                 </div>
               </div>
           </div>
+          <div class="primary-button" style="text-align: center; margin-top: 15px">
+              <a href="#errors">Error Details</a>
+          </div>
         </div>
     </div>
+
+  <div class="tabs-content baner-content" id="errors">
+      <div class="container">
+          <div class="first-content">
+              <div class="talisman-logo">
+                  <img src="img/talisman.png" />
+              </div>
+              <h1 class="summary-header" style="text-align: center; margin-bottom: 15px">Errors Details</h1>
+              <hr></hr>
+      </div>
+          <div class="limiter1">
+              <span> Showing for file: </span>
+              <div class="dropdown">
+                  <button onclick="myDropDown()" class="dropbtn">All</button>
+                  <div id="list" class="dropdown-content">
+                      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                      <a href="#about">About</a>
+                      <a href="#base">Base</a>
+                      <a href="#blog">Blog</a>
+                      <a href="#contact">Contact</a>
+                      <a href="#custom">Custom</a>
+                      <a href="#support">Support</a>
+                      <a href="#tools">Tools</a>
+                  </div>
+              </div>
+              <div class="container-table100">
+                  <div class="wrap-table100">
+                      <div class="table100 ver3 m-b-110">
+                          <table data-vertable="ver6">
+                              <thead>
+                              <tr class="row100 head">
+                                  <th class="column100 column1" data-column="column1">Error type</th>
+                                  <th class="column100 column2" data-column="column2">Error message</th>
+                                  <th class="column100 column3" data-column="column3">Commit IDs</th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+  </div>
 
     <footer>
         <!--<div class="container">-->
@@ -180,9 +229,30 @@
         });
     </script>
 
-    <script type="text/javascript">
+    <script>
+    function myDropDown() {
+      document.getElementById("list").classList.toggle("show");
+    }
 
+    function filterFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      div = document.getElementById("list");
+      a = div.getElementsByTagName("a");
+      for (i = 0; i < a.length; i++) {
+        txtValue = a[i].textContent || a[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          a[i].style.display = "";
+        } else {
+          a[i].style.display = "none";
+        }
+      }
+    }
     </script>
+
+
+  <script type="text/javascript"></script>
 
 </body>
 </html>
