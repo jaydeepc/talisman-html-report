@@ -8,6 +8,16 @@
   font-size: 31px !important;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.farright {
+  position: absolute;
+  right: 0;
+}
+
 .first-content hr {
     height: 10px;
 }
