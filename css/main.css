@@ -18,6 +18,11 @@ footer {
   right: 0;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
 .first-content hr {
     height: 10px;
 }

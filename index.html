@@ -145,19 +145,13 @@
               <hr></hr>
       </div>
           <div class="limiter1">
-              <span> Showing for file: </span>
+              <p> Display for file: </p>
               <div class="dropdown">
-                  <button onclick="myDropDown()" class="dropbtn">All</button>
-                  <div id="list" class="dropdown-content">
-                      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                      <a href="#about">About</a>
-                      <a href="#base">Base</a>
-                      <a href="#blog">Blog</a>
-                      <a href="#contact">Contact</a>
-                      <a href="#custom">Custom</a>
-                      <a href="#support">Support</a>
-                      <a href="#tools">Tools</a>
-                  </div>
+                  <select>
+                      <option value="" selected="selected">All</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                  </select>
               </div>
               <div class="container-table100">
                   <div class="wrap-table100">
@@ -228,29 +222,6 @@
           });
         });
     </script>
-
-    <script>
-    function myDropDown() {
-      document.getElementById("list").classList.toggle("show");
-    }
-
-    function filterFunction() {
-      var input, filter, ul, li, a, i;
-      input = document.getElementById("myInput");
-      filter = input.value.toUpperCase();
-      div = document.getElementById("list");
-      a = div.getElementsByTagName("a");
-      for (i = 0; i < a.length; i++) {
-        txtValue = a[i].textContent || a[i].innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          a[i].style.display = "";
-        } else {
-          a[i].style.display = "none";
-        }
-      }
-    }
-    </script>
-
 
   <script type="text/javascript"></script>
 
