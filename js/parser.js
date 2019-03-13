@@ -36,51 +36,29 @@
                              $('.limiter tbody').empty();
                              $('#lightbox-det').empty();
                              table_det = "<table class='lightbox-err'><tr><th style='font-weight: bold'>Serial Number</th><th style='font-weight: bold'>Git Commmit SHA</th></tr>";
-                             for (var i=0; i<data.length; i++){
-
-                                 filename = data[i].filename;
-                                 totalErrors = data[i].failure_list.length;
-                                 totalWarnings = data[i].warning_list == null ? "No Warnings" : data[i].warning_list.length;
-                                 for(var j=0; j<data[i].failure_list.length; j++){
-                                   commitIDs = data[i].failure_list[j].commits;
+                             for (var row_num=0; row_num<data.length; row_num++){
+                                 var commit_table = "";
+                                 filename = data[row_num].filename;
+                                 totalErrors = data[row_num].failure_list.length;
+                                 totalWarnings = data[row_num].warning_list == null ? "No Warnings" : data[row_num].warning_list.length;
+                                 for(var failure_num=0; failure_num<data[row_num].failure_list.length; failure_num++){
+                                   commitIDs = data[row_num].failure_list[failure_num].commits;
                                  }
 
                                  $('.limiter tbody').append('<tr class="row100"><td class="column100 column1" data-column="column1">' + filename +
                                  '</td><td class="column100 column2" data-column="column2">' + totalErrors +
                                  '</td><td class="column100 column3" data-column="column3">' + totalWarnings +
-                                 '</td><td class="column100 column4" data-column="column4"><a href="#" data-featherlight="#commit-details-' + i + '">' + commitIDs.length +
+                                 '</td><td class="column100 column4" data-column="column4"><a href="#" data-featherlight="#commit-details-' + row_num + '">' + commitIDs.length +
                                  '</a></td></tr>');
                                  var commit_table = "";
-                                 for(var k=0; k<commitIDs.length; k++){
-                                   commit_table = commit_table.concat('<tr><td>' + (k+1) + '</td><td>' + commitIDs[k] + '</td></tr>');
+                                 for(var commitID_row_index=0; commitID_row_index<commitIDs.length; commitID_row_index++){
+                                   commit_table = commit_table.concat('<tr><td>' + (commitID_row_index+1) + '</td><td>' + commitIDs[commitID_row_index] + '</td></tr>');
                                  }
 
-                                 $('#lightbox-det').append('<div id="commit-details-' + i +'">' + table_det + commit_table + '</table></div>');
+                                 $('#lightbox-det').append('<div id="commit-details-' + row_num +'">' + table_det + commit_table + '</table></div>');
                              }
                         }
                     })
-
-                 // for (var i=pageNumber-1*PageSize; i<pageNumber-1*PageSize; i++){
-                 //    for (var i=(pageNumber-1)*pageSize; i<pageNumber*pageSize; i++){
-                 //        var b = "";
-                 //        filename = detailedFailures[i].filename;
-                 //        totalErrors = detailedFailures[i].failure_list.length;
-                 //        totalWarnings = detailedFailures[i].warning_list == null ? "No Warnings" : detailedFailures[i].warning_list.length;
-                 //        for(var j=0; j<detailedFailures[i].failure_list.length; j++){
-                 //          commitIDs = detailedFailures[i].failure_list[j].commits;
-                 //        }
-                 //
-                 //        $('.limiter tbody').append('<tr class="row100"><td class="column100 column1" data-column="column1">' + filename +
-                 //        '</td><td class="column100 column2" data-column="column2">' + totalErrors +
-                 //        '</td><td class="column100 column3" data-column="column3">' + totalWarnings +
-                 //        '</td><td class="column100 column4" data-column="column4"><a href="#" data-featherlight="#commit-details-' + 1 + '">' + commitIDs.length +
-                 //        '</a></td></tr>');
-                 //
-
-                 //        $('#lightbox').append('<div id="commit-details-' + 1 +'">' + b + '</div>');
-                 //
-                 //    }
-
                });
 
          });
