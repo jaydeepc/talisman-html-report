@@ -34,9 +34,10 @@
                         className: 'paginationjs-theme-red',
                         callback: function(data, pagination) {
                              $('.limiter tbody').empty();
+                             $('#lightbox-det').empty();
                              table_det = "<table class='lightbox-err'><tr><th style='font-weight: bold'>Serial Number</th><th style='font-weight: bold'>Git Commmit SHA</th></tr>";
                              for (var i=0; i<data.length; i++){
-                                 var commit_table = "";
+
                                  filename = data[i].filename;
                                  totalErrors = data[i].failure_list.length;
                                  totalWarnings = data[i].warning_list == null ? "No Warnings" : data[i].warning_list.length;
@@ -49,7 +50,7 @@
                                  '</td><td class="column100 column3" data-column="column3">' + totalWarnings +
                                  '</td><td class="column100 column4" data-column="column4"><a href="#" data-featherlight="#commit-details-' + i + '">' + commitIDs.length +
                                  '</a></td></tr>');
-
+                                 var commit_table = "";
                                  for(var k=0; k<commitIDs.length; k++){
                                    commit_table = commit_table.concat('<tr><td>' + (k+1) + '</td><td>' + commitIDs[k] + '</td></tr>');
                                  }
