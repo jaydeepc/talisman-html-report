@@ -55,10 +55,12 @@
                         callback: function(data, pagination) {
                              $('.limiter1 tbody').empty();
                              $('#lightbox-det').empty();
-                             table_det = "<table class='lightbox-err'><tr><th style='font-weight: bold'>Serial Number</th><th style='font-weight: bold'>Git Commmit SHA</th></tr>";
-                             for (var row_num=0; row_num<data.length; row_num++){
-                                 var commit_table = "";
-                                 filename = data[row_num].filename;
+
+                              table_det = "<table class='lightbox-err'><tr><th style='font-weight: bold'>Serial Number</th><th style='font-weight: bold'>Git Commmit SHA</th></tr>";
+                              for (var row_num=0; row_num<data.length; row_num++){
+                                var commit_table = "";
+                                filename = data[row_num].filename;
+
                                  for(var failure_num=0; failure_num<data[row_num].failure_list.length; failure_num++){
                                    errorType = data[row_num].failure_list[failure_num].type;
                                    errorMessage = data[row_num].failure_list[failure_num].message;
@@ -79,6 +81,14 @@
                         }
                     })
 
+                      var dropdownFiles = document.getElementById("files");
+                      for (var row_num=0; row_num<detailedFailures.length; row_num++){
+                        var option = document.createElement("option");
+                        filename = detailedFailures[row_num].filename;
+                        option.text = filename;
+                        console.log(option);
+                        dropdownFiles.add(option);
+                        }
                });
 
          });
