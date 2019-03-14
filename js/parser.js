@@ -81,11 +81,13 @@
                         }
                     })
 
+                     // Populate drop down
                       var dropdownFiles = document.getElementById("files");
                       for (var row_num=0; row_num<detailedFailures.length; row_num++){
                         var option = document.createElement("option");
                         filename = detailedFailures[row_num].filename;
                         option.text = filename;
+                        option.setAttribute("id", filename);
                         console.log(option);
                         dropdownFiles.add(option);
                         }
