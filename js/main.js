@@ -63,7 +63,7 @@ jQuery(document).ready(function($) {
                     }
 
                     $('.limiter1 tbody').append('<tr class="row100"><td class="column100 column1" data-column="column1">' + filename +
-                    '</td><td class="column100 column2" data-column="column2">' + errorMessage +
+                    '</td><td class="column100 column2" data-column="column2">' + errorType +
                     '</td><td class="column100 column3" data-column="column3">' + errorMessage +
                     '</td><td class="column100 column4" data-column="column4"><a href="#" data-featherlight="#commit-details-' + row_num + '">' + commitIDs.length +
                     '</a></td></tr>');
