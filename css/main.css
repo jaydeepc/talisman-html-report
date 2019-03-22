@@ -30,7 +30,7 @@ footer {
 .paginationjs{
 	display: flex;
   justify-content: center;
-	margin-top: -99px;
+	/* margin-top: -99px; */
 }
 
 .paginationjs-pages{
@@ -38,7 +38,7 @@ footer {
 }
 
 .first-content .primary-button{
-	    margin-top: 13px !important;
+	    /* margin-top: 13px !important; */
 }
 
 .lightbox-err th{
@@ -69,7 +69,7 @@ footer {
 
 .container-table100 {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 
   display: -webkit-box;
   display: -webkit-flex;
@@ -80,7 +80,7 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   padding: 33px 30px;
-	margin-top: -239px;
+	/* margin-top: -239px; */
 }
 
 .wrap-table100 {
@@ -96,7 +96,7 @@ footer {
 
 .container-table100 {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 
   display: -webkit-box;
   display: -webkit-flex;
@@ -107,7 +107,7 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   padding: 33px 30px;
-	margin-top: -239px;
+	/* margin-top: -239px; */
 }
 
 .wrap-table100 {

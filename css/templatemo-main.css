@@ -143,7 +143,7 @@ a:hover { color: #FF0; }
 
 .parallax-content {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-size: cover;
 }
 
@@ -178,11 +178,11 @@ a:hover { color: #FF0; }
 }
 
 .baner-content .primary-button {
-  margin-top: 29px !important;
+  /* margin-top: 29px !important; */
 }
 
 #detailed-report .primary-button {
-  margin-top: -248px !important;
+  /* margin-top: -248px !important; */
 }
 
 .service-content {
@@ -308,7 +308,7 @@ h4, .h4 {
   padding-top: 8vh;
   /* background-image: url(../img/1st-section.jpg); */
   background-attachment: fixed;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-size: cover;
   background-position: center center;
 }
