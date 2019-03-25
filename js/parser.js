@@ -56,17 +56,6 @@
                         var targetOffset = $(errors).offset().top - 50
                         $('html,body').animate({ scrollTop: targetOffset }, 100);
                     })
-
-                    // $(function(){
-                    //     function yourfunction(event) {
-                    //         $("#files").val(this.id)
-                    //         $("#files").trigger("change")
-                    //         var targetOffset = $(errors).offset().top - 50
-                    //         $('html,body').animate({ scrollTop: targetOffset }, 300);
-                    //         return '#files' 
-                    //     }
-                    //     $('a.anchorclass').click(yourfunction);
-                    // });
                     
                     $('#errors').pagination({
                         dataSource: detailedFailures,
