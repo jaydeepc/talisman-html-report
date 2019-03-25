@@ -29,6 +29,7 @@
                     var pageNumber = 1;
 
                     $('#detailed-report').pagination({
+                        
                         dataSource: detailedFailures,
                         pageSize: 8,
                         className: 'paginationjs-theme-red',
@@ -40,24 +41,32 @@
                                  totalErrors = data[row_num].failure_list.length;
                                  totalWarnings = data[row_num].warning_list == null ? "No Warnings" : data[row_num].warning_list.length;
 
-                                 $('.limiter tbody').append('<tr class="row100"><td class="column100 column1" data-column="column1">' + filename +
-                                 '</td><td class="column100 column2" data-column="column2"><a class="anchorclass" href="#" id="' + filename + '">' + totalErrors +
+                                 $('.limiter tbody').append('<tr class="row100" id="' + filename + '"><td class="column100 column1" data-column="column1">' + filename +
+                                 '</td><td class="column100 column2" data-column="column2"><a href="#summary">' + totalErrors +
                                  '</a></td><td class="column100 column3" data-column="column3">' + totalWarnings +
                                  '</td></tr>');
                              }
                         }
                     })
 
-                    $(function(){
-                        function yourfunction(event) {
-                            $("#files").val(this.id)
-                            $("#files").trigger("change")
-                            var targetOffset = $(errors).offset().top - 50
-                            $('html,body').animate({ scrollTop: targetOffset }, 300);
-                            return '#files'
-                        }
-                        $('a.anchorclass').click(yourfunction);
-                    });
+                    $('.limiter tbody').on('click', 'tr', function(){
+                        
+                        $("#files").val(this.id)
+                        $("#files").trigger("change")
+                        var targetOffset = $(errors).offset().top - 50
+                        $('html,body').animate({ scrollTop: targetOffset }, 100);
+                    })
+
+                    // $(function(){
+                    //     function yourfunction(event) {
+                    //         $("#files").val(this.id)
+                    //         $("#files").trigger("change")
+                    //         var targetOffset = $(errors).offset().top - 50
+                    //         $('html,body').animate({ scrollTop: targetOffset }, 300);
+                    //         return '#files' 
+                    //     }
+                    //     $('a.anchorclass').click(yourfunction);
+                    // });
                     
                     $('#errors').pagination({
                         dataSource: detailedFailures,
