@@ -3,6 +3,9 @@
     // Number of total records
     // Page size
     // page number
+              let dataFile = require('../data/report.json');
+              let stringData = JSON.stringify(dataFile);
+              console.log(stringData);
 
 
                $.getJSON('../data/report.json', function(jd) {
@@ -29,7 +32,7 @@
                     var pageNumber = 1;
 
                     $('#detailed-report').pagination({
-                        
+
                         dataSource: detailedFailures,
                         pageSize: 8,
                         className: 'paginationjs-theme-red',
@@ -50,13 +53,13 @@
                     })
 
                     $('.limiter tbody').on('click', 'tr', function(){
-                        
+
                         $("#files").val(this.id)
                         $("#files").trigger("change")
                         var targetOffset = $(errors).offset().top - 50
                         $('html,body').animate({ scrollTop: targetOffset }, 100);
                     })
-                    
+
                     $('#errors').pagination({
                         dataSource: detailedFailures,
                         pageSize: 8,
@@ -103,5 +106,3 @@
                         }
                });
          });
-
-         

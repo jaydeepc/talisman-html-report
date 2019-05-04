@@ -9,10 +9,13 @@
 - [Installation](#installation)
 
 # What is Talisman HTML Report?
-Talisman HTML Report provides you with a dashboard to monitor the status of your reporsitory. 
+Talisman HTML Report provides you with a dashboard to monitor the status of your reporsitory.
 You will need to have Talisman installed on your machine to generate the scan report of your repository (Please refer [Talisman documentation](https://github.com/thoughtworks/talisman) to understand how Talisman works.
 
 # Installation
+
+``` curl https://github.com/jaydeepc/talisman-html-report/archive/v0.1.zip  -o ~/.talisman/bin/talisman_html_report.zip -J -L ```
+
 Please download the source code and start a HTTP server in the directory where the code has been downloaded. Below is a recommended approach to start a HTTP server:
 
 ``` python3 -m http.server```
