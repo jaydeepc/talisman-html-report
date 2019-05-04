@@ -14,9 +14,9 @@ You will need to have Talisman installed on your machine to generate the scan re
 
 # Installation
 
-``` curl https://github.com/jaydeepc/talisman-html-report/archive/v0.1.zip  -o ~/.talisman/bin/talisman_html_report.zip -J -L ```
+``` curl https://github.com/jaydeepc/talisman-html-report/archive/v1.1.zip  -o ~/.talisman/bin/talisman_html_report.zip -J -L && cd ~/.talisman/bin && unzip talisman_html_report.zip -d . && mv talisman-html-report-1.1 talisman_html_report && rm talisman_html_report.zip ```
 
-Please download the source code and start a HTTP server in the directory where the code has been downloaded. Below is a recommended approach to start a HTTP server:
+Please download the source code with the above command and start a HTTP server in the directory where the code has been downloaded. Below is a recommended approach to start a HTTP server:
 
 ``` python3 -m http.server```
 
