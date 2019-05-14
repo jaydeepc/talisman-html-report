@@ -1,5 +1,5 @@
 
-<i>Powered by 		<img class=logo align=bottom width="10%" height="10%" src="https://github.com/jaydeepc/talisman-html-report/raw/master/img/logo_reportmine.png" /><a href="https://jaydeepc.github.io/report-mine-website/" /> </i>
+<i>Powered by 		<a href="https://jaydeepc.github.io/report-mine-website/"></a><img class=logo align=bottom width="10%" height="10%" src="https://github.com/jaydeepc/talisman-html-report/raw/master/img/logo_reportmine.png" /></i>
 
 ## Table of Contents
 - [What is Talisman HTML Report?](#what-is-talisman-html-report)
