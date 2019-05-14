@@ -1,8 +1,5 @@
-<div style="display: flex; justify-content: center;">
-	<h1 align="center">
-		<img class=logo align=bottom width="5%" height="5%" src="https://thoughtworks.github.io/talisman/logo.svg" />
-		Talisman HTML Report</h1>
-</div>
+
+<i>Powered by 		<img class=logo align=bottom width="5%" height="5%" src="https://github.com/jaydeepc/talisman-html-report/raw/master/img/logo_reportmine.png" /><a href="https://jaydeepc.github.io/report-mine-website/" /> </i>
 
 ## Table of Contents
 - [What is Talisman HTML Report?](#what-is-talisman-html-report)
@@ -21,3 +18,23 @@ Please download the source code with the above command and start a HTTP server i
 ``` python3 -m http.server```
 
 Once the server is up, you can access [localhost](localhost:8000) to view the dashboard.
+
+## Sample Screenshots
+
+* Welcome
+
+<img width="100%" height="70%" src="https://github.com/jaydeepc/talisman-html-report/raw/master/sample/summary.png" />
+
+* Summary
+
+<img width="100%" height="70%" src="https://github.com/jaydeepc/talisman-html-report/raw/master/sample/execution-summary.png" />
+
+* Detailed Report
+
+<img width="100%" height="70%" src="https://github.com/jaydeepc/talisman-html-report/raw/master/sample/detailed.png" />
+
+* Error Report
+
+<img width="100%" height="70%" src="https://github.com/jaydeepc/talisman-html-report/raw/master/sample/error-report.png" />
+
+<i> **Note**: You don't have to start a server if you are running Talisman in CI or any other hosted environment </i>
