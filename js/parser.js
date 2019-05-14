@@ -3,10 +3,6 @@
     // Number of total records
     // Page size
     // page number
-              let dataFile = require('../data/report.json');
-              let stringData = JSON.stringify(dataFile);
-              console.log(stringData);
-
 
                $.getJSON('../data/report.json', function(jd) {
                     total_filecontent = jd.summary.types.filecontent || 0;
