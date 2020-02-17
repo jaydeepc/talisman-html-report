@@ -3,6 +3,18 @@ $(document).ready(function() {
   // Page size
   // page number
 
+  function populateDropdown(el, data) {
+    var dropdown = document.getElementById(el);
+    for (var row_num = 0; row_num < data.length; row_num++) {
+      var option = document.createElement("option");
+      row_value = data[row_num];
+      option.text = row_value;
+      option.setAttribute("id", row_value);
+      console.log(option);
+      dropdown.add(option);
+    }
+  }
+
   $.getJSON("../data/report.json", function(jd) {
     total_filecontent = jd.summary.types.filecontent || 0;
     total_filesize = jd.summary.types.filesize || 0;
@@ -90,15 +102,19 @@ $(document).ready(function() {
       }
     });
 
-    // Populate drop down
-    var dropdownFiles = document.getElementById("files");
-    for (var row_num = 0; row_num < detailedFailures.length; row_num++) {
-      var option = document.createElement("option");
-      filename = detailedFailures[row_num].filename;
-      option.text = filename;
-      option.setAttribute("id", filename);
-      console.log(option);
-      dropdownFiles.add(option);
-    }
+    // Populate error filters
+    const fileNames = detailedFailures.map(failure => failure.filename);
+    const errorTypes = [
+      ...new Set(
+        detailedFailures
+          .map(detailedFailure =>
+            detailedFailure.failure_list.map(failure => failure.type)
+          )
+          .flat()
+      )
+    ];
+
+    populateDropdown("files", fileNames);
+    populateDropdown("error-types", errorTypes);
   });
 });
