@@ -41,46 +41,81 @@ jQuery(document).ready(function($) {
       
     })
 
-    $("#files").change(function() {
+    function applyFileNameFilter(errors, fileName) {
+      if (fileName === "all") return errors;
+      return errors.filter(error => error.filename === fileName);
+    }
+
+    function applyErrorTypeFilter(errors, errorType) {
+      if (errorType === "all") return errors;
+      return errors.map(error => {
+        const errorClone = JSON.parse(JSON.stringify(error));
+        errorClone.failure_list = error.failure_list.filter(
+          failure => failure.type === errorType
+        );
+        return errorClone;
+      });
+    }
+    
+    function applyFilters(errors, selectedfilename, selectedErrorType) {
+      return applyErrorTypeFilter(
+        applyFileNameFilter(errors, selectedfilename),
+        selectedErrorType
+      );
+    }
+
+    function onFilterChange() {
         var selectedfilename = $('#files').val()
+        var selectedErrorType = $('#error-types').val()
+
         $.getJSON( "../data/report.json", function(jsondata) {
             $('#errors').pagination('hide')
             $('.limiter1 tbody').empty()
             table_det = "<table class='lightbox-err'><tr><th style='font-weight: bold'>Serial Number</th><th style='font-weight: bold'>Git Commmit SHA</th></tr>";
-            for (var row_num=0; row_num<jsondata.results.length; row_num++){
-                var commit_table = "";
-                var filename = jsondata.results[row_num].filename;
-                if (selectedfilename == 'all') {
-                    $('#errors').pagination('show')
-                    window.location.reload(true)
-                    return
-                }
-                if (filename == selectedfilename || selectedfilename == 'all') {
-                    for(var failure_num=0; failure_num<jsondata.results[row_num].failure_list.length; failure_num++){
-                        var errorType = jsondata.results[row_num].failure_list[failure_num].type;
-                        var errorMessage = jsondata.results[row_num].failure_list[failure_num].message;
-                        var commitIDs = jsondata.results[row_num].failure_list[failure_num].commits;
-                    }
-
-                    $('.limiter1 tbody').append('<tr class="row100"><td class="column100 column1" data-column="column1">' + filename +
-                    '</td><td class="column100 column2" data-column="column2">' + errorType +
-                    '</td><td class="column100 column3" data-column="column3"><div>' + errorMessage +
-                    '</div></td><td class="column100 column4" data-column="column4"><a href="#" data-featherlight="#commit-details-' + row_num + '">' + commitIDs.length +
-                    '</a></td></tr>');
-                    var commit_table = "";
-                    for(var commitID_row_index=0; commitID_row_index<commitIDs.length; commitID_row_index++){
-                        commit_table = commit_table.concat('<tr><td>' + (commitID_row_index+1) + '</td><td>' + commitIDs[commitID_row_index] + '</td></tr>');
-                    }
-                    
-                    $('#lightbox-det').append('<div id="commit-details-' + row_num +'"> '+ table_det + commit_table + '</table></div>');
-                }        
+            
+            var filteredErrors = applyFilters(jsondata.results, selectedfilename, selectedErrorType);
+            
+            if (selectedfilename == "all" && selectedErrorType == 'all') {
+                $("#errors").pagination("show");
+                window.location.reload(true);
+                return;
             }
+            
+            for (var row_num=0; row_num < filteredErrors.length; row_num++){
+                const error = filteredErrors[row_num];
+                var filename = error.filename;
+                
+                for(var failure_num=0; failure_num < error.failure_list.length; failure_num++){
+                    var errorType = error.failure_list[failure_num].type;
+                    var errorMessage = error.failure_list[failure_num].message;
+                    var commitIDs = error.failure_list[failure_num].commits;
+
+                    $(".limiter1 tbody").append(`
+                        <tr class="row100">
+                            <td class="column100 column1" data-column="column1">${filename}</td>
+                            <td class="column100 column2" data-column="column2">${errorType}</td>
+                            <td class="column100 column3" data-column="column3"><div>${errorMessage}</div></td>
+                            <td class="column100 column4" data-column="column4">
+                                <a href="#" data-featherlight="#commit-details-${row_num}">${commitIDs.length}</a>
+                            </td>
+                        </tr>`);
+
+                    var commit_table = "";
+                    for(var commitID_row_index=0; commitID_row_index < commitIDs.length; commitID_row_index++){
+                        commit_table = commit_table.concat(`<tr><td>${ commitID_row_index + 1 }</td><td>${ commitIDs[commitID_row_index] }</td></tr>`);
+                    }
+                    $('#lightbox-det').append('<div id="commit-details-' + row_num +'"> '+ table_det + commit_table + '</table></div>');
+                }
+            }        
         })           
-    })
+    }
+    
+    $("#files").change(onFilterChange);
+    $("#error-types").change(onFilterChange);
 
     var owl = $("#owl-testimonials");
 
-      owl.owlCarousel({
+    owl.owlCarousel({
         
         pagination : true,
         paginationNumbers: false,
