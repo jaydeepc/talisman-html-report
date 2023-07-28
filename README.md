@@ -19,7 +19,7 @@ Before running the below command, make sure you have installed [Talisman](https:
 
 Please download the source code with the above command and start a HTTP server in the directory where the code has been downloaded. Below is a recommended approach to start a HTTP server:
 
-``` python -m SimpleHTTPServer <port> (Eg: 8000)```
+``` python -m http.server <port> (Eg: 8000)```
 
 Once the server is up, you can access [localhost](localhost:8000) to view the dashboard.
 
